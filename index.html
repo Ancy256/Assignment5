@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/portfolio_icon.jpg">
+    <link rel="stylesheet" href="./style/style.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header_nav">
+                <div class="nav_head">
+                    <a href="/"><h1>Ancy Mathew</h1></a>
+                </div>
+                <div class="nav_links">
+                    <ul class="nav_ul">
+                        <li>
+                            <a href="#About_Me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#Projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>   
+        <section id="About_Me">
+            <div class="aboutme_main">
+                <div class="aboutme_div">
+                    <div class="aboutmeimg">
+                        <img src="./images/Ancy.jpg" alt="profile_picture"/>
+                    </div>
+                    <div class="aboutmedesc">
+                        <h2>About Me</h2>
+                    <p>Hi, I’m <span>Ancy</span>, a Full Stack Development student with a curiosity for both the front and back end of
+                        web development. I’m passionate about turning ideas into fully functioning websites and applications.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Projects">
+           <div class="projects">
+            <h2> Projects</h2>
+            <div class="projectdesc">
+                <ol>
+                    <li>
+                        <img src="./images/recipie_page.png" alt="Omlette" />
+                        <h3>Simple Omlette Recipie</h3>
+                        <p>This is a simple webpage created using HTML & CSS</p>
+                        <a href="https://wonderful-salamander-da2bba.netlify.app/" target="_blank">Click Me to view!</a><br />
+                    </li>
+                    <li>
+                        <img src="./images/Amazon.png" alt="Amazon"/>
+                        <h3>Amazon</h3>
+                        <p>The link below will take you to the Amazoan home page. A sample
+                            of the website UI is given below.</p>
+                        <a href="https://www.amazon.in/" target="_blank">Click Me to view!</a><br />
+                    </li>
+                    <li>
+                        <img src="./images/Mozilla.png" alt="Mozilla"/>
+                        <h3>Mozilla Clone</h3>
+                        <p>This is a replica of Mozilla home page by using simple html tags. The link below will take you to
+                            the page. A sample of the website UI is given below. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam nihil magnam dignissimos beatae molestias sed!</p>
+                        <a href="https://zingy-daffodil-ae18b0.netlify.app/" target="_blank">Click Me to view!</a><br />
+                    </li>
+                </ol>
+            </div>
+           </div>
+        </section>
+        <section id="Contact">
+            <div class="contact_main">
+                <h2>Contact</h2>
+                <form method="get">
+                    <fieldset>
+                        <legend>Contact Form:</legend>
+                        <div class="form">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="name" minlength="3" placeholder="Enter your first name" required/>
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="name" minlength="3" placeholder="Enter your last name"  required/>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" maxlength="40" placeholder="aaa@example.com" required />
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" maxlength="50" placeholder="max 50 chars allowed" />
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" maxlength="200" placeholder="max 200 chars allowed" rows="4" cols="30"></textarea>
+                            <input type="submit" value="Submit" class="submit"/>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>    
+    </main>
+</body>
+</html>
