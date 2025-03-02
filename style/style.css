@@ -91,29 +91,28 @@ span{
     grid-template-columns: 1fr;
     align-items: center;
     padding: 25px 0px;
-    position: relative;
 }
-.aboutmeimg img{
-    height:280px;
-    border-radius:10px;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(calc(-90%),calc(-50%));
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .aboutmedesc{
     background-image: linear-gradient(to right,white,rgb(234, 231, 231));
     border-radius: 3px;
     width: 60%;
-    margin: auto;
+    margin:auto;
+    position: relative;
     line-height: 1.7;
     align-content: center;
+    text-align: justify;
     padding: 70px 70px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.aboutme_img{
+    height:280px;
+    position: absolute;
+    border-radius:10px;
+    right:0;
+    top:0;
+    transform: translate(calc(90%),calc(5%));
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .projects{
     max-width: 1220px;
     margin: auto;
@@ -216,25 +215,14 @@ label{
             display: block;
             z-index: 1;
         }
-     .aboutme_div{
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        position: relative;
-    }
-    .aboutmeimg img{
-        height: 150px;
-        top: 20%;
-        left: 90%;
-        transform: translate(calc(-50%),calc(-50%));
-    }
+        .aboutme_img{
+            height:150px;
+            right:0;
+            top:0;
+            transform: translate(calc(0%),calc(-5%));
+        }
     .aboutmedesc{
         width: 90%;
-        margin: auto;
-        line-height: 1.7;
-        align-content: center;
-        padding: 70px 70px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .projectdesc ol{
@@ -246,5 +234,27 @@ label{
     .projectdesc li:hover{
         transform: none;
         background-color: rgba(37, 36, 36, 0.641);
+    }
+}
+@media screen and (min-width:769px) {
+    .aboutme_img{
+        height: 200px;
+        right:0;
+        top:0;
+        transform: translate(calc(65%),calc(-10%));
+    }
+    .aboutmedesc{
+        width: 70%;
+    }
+}
+ @media screen and (min-width:1024px) {
+     .aboutme_img{
+        height:280px;
+        right:0;
+        top:0;
+        transform: translate(calc(90%),calc(5%));
+    }
+    .aboutmedesc{
+        width: 60%;
     }
 }
