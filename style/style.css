@@ -17,7 +17,7 @@ body{
     background-image:radial-gradient(circle,white,lightgray);
 }
 h1{
-    font-size: 34px;
+    font-size: 4vw;
     font-family: 'Young-Serif';
 }
 h2{
@@ -183,23 +183,24 @@ input, textarea,label{
 label{
     font-weight: bold;
 }
-/* 
+
 @media screen and (max-width:768px) {
-    .header_nav li{
-        float:left;
-    }
-        .header_nav li a {
-            padding: 20px 30px;
-          }
-          .header_nav .nav_ul {
-            clear: none;
-            float: right;
-            max-height: none;
-          }
-          .header_nav .nav_links {
+          .hamburger-menu{
             display: none;
+            position: absolute;
+            top: 35px;
+            right: 0;
+            background-color: #c7c6c6;
+            width: 150px;
+            padding: 10px;
+            border-radius: 5px;
           }
-          .nav_ul span{
+          .hamburger-menu ul{
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .hamburger-icon span{
             display: block;
             width: 33px;
             height: 4px;
@@ -207,10 +208,14 @@ label{
             position: relative;
             background-color: #252525;
             border-radius: 3px;
-            
-          }
-    
-    .aboutme_div{
+            right: 25px;
+            top:8px;  
+        }
+        .nav_links:hover .hamburger-menu{
+            display: block;
+            z-index: 1;
+        }}
+    /* .aboutme_div{
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: center;
@@ -235,5 +240,4 @@ label{
         text-align: justify;
         padding-bottom: 10px;
         overflow: auto;
-}
-} */
+    } */
