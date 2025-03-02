@@ -246,6 +246,13 @@ label{
     .aboutmedesc{
         width: 70%;
     }
+    .projectdesc ol{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .projectdesc li:hover{
+        transform: none;
+        background-color: rgba(37, 36, 36, 0.641);
+    }
 }
  @media screen and (min-width:1024px) {
      .aboutme_img{
@@ -256,5 +263,8 @@ label{
     }
     .aboutmedesc{
         width: 60%;
+    }
+    .projectdesc ol{
+        grid-template-columns: 1fr 1fr 1fr ;
     }
 }
