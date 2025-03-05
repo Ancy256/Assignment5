@@ -6,106 +6,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My PortFolio</title>
     <link rel="icon" type="image/x-icon" href="./images/portfolio_icon.jpg">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
     </link>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="header_nav">
-                <div class="nav_head">
-                    <a href="/"><h1>Ancy Mathew</h1></a>
-                </div>
-                <div class="nav_links">
-                    <div class="hamburger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="hamburger-menu">
-                        <ul class="nav_ul">
-                            <li>
-                                <a href="#About_Me">About Me</a>
-                            </li>
-                            <li>
-                                <a href="#Projects">Projects</a>
-                            </li>
-                            <li>
-                                <a href="#Contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-height">
+            <div class="container">
+              <a class="navbar-brand logo" href="#"><img src="./images/Logo.jpg" alt="Logo" width="40" height="40"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutme">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
         </nav>
     </header>
-    <main>   
-        <section id="About_Me">
-            <div class="aboutme_main">
-                <div class="aboutme_div">
-                    <div class="aboutmedesc">
-                        <h2>About Me</h2>
-                        <p>Hi, I’m <span>Ancy</span>, a Full Stack Development student with a curiosity for both the front and back end of
-                            web development. I’m passionate about turning ideas into fully functioning websites and applications.
-                        </p>
-                            <img src="./images/Ancy.jpg" alt="profile_picture" class="aboutme_img"/>
+    <main>
+        <section id="hero">
+            <!-- Hero -->
+            <div class="p-5 text-center bg-image rounded-3" style="
+            background-image: url('https://media.gettyimages.com/id/1469875556/video/4k-abstract-lines-background-loopable.jpg?s=640x640&k=20&c=oRhmLOFm1rQPZQSQrUqnd8eRd8LsoGLmiQS7nMIh-MU='); background-size: contain;
+            height: 250px;
+            ">
+                <div class="mask container" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-center align-items-center h-100 mx-5">
+                        <div class="text-white">
+                            <h1 class="mb-3"><span class="text-info">Welcome</span> to my Portfolio Website</h1>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laboriosam perspiciatis dolores commodi libero inventore incidunt. Illo explicabo nisi exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dignissimos quae maiores ut nulla blanditiis assumenda! Repellendus earum voluptatibus sint!</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Hero -->
+        </section>
+        <section id="aboutme">
+          <div class="container">
+            <div class="row align-items-center shadow p-3 mb-5 bg-body rounded">
+              <div class="col-sm-12 col-md-6 order-1">
+                <h2 class="text-center mb-3">Hi!! I am <span class="text-primary">Ancy Mathew</span></h2>
+                <p>A Full Stack Development student with a curiosity for both the front and back end of web development. I’m passionate about turning ideas into fully functioning websites and applications.</p>
+              </div>
+              <div class="col-sm-12 col-md-6 order-md-1">
+                <img src="./images/Ancy.jpg" alt="Photo" class="aboutmeimg shadow p-3 mb-5 bg-body rounded">
+              </div>
+            </div>
+          </div>
         </section>
         <section id="Projects">
-           <div class="projects">
-            <h2> Projects</h2>
-            <div class="projectdesc">
-                <ol>
-                    <li>
-                        <img src="./images/recipie_page.png" alt="Omlette" />
-                        <h3>Simple Omlette Recipie</h3>
-                        <p>This is a simple webpage created using HTML & CSS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eligendi Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, animi aspernatur excepturi officiis magni vel!</p>
-                        <a href="https://wonderful-salamander-da2bba.netlify.app/">Click Me to view!</a><br />
-                    </li>
-                    <li>
-                        <img src="./images/Amazon.png" alt="Amazon"/>
-                        <h3>Amazon</h3>
-                        <p>The link below will take you to the Amazoan home page. A sample
-                            of the website UI is given below.</p>
-                        <a href="https://www.amazon.in/">Click Me to view!</a><br />
-                    </li>
-                    <li>
-                        <img src="./images/Mozilla.png" alt="Mozilla"/>
-                        <h3>Mozilla Clone</h3>
-                        <p>This is a replica of Mozilla home page by using simple html tags. The link below will take you to
-                            the page. A sample of the website UI is given below. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam nihil magnam dignissimos beatae molestias sed!</p>
-                        <a href="https://zingy-daffodil-ae18b0.netlify.app/">Click Me to view!</a><br />
-                    </li>
-                </ol>
+          <div class="container">
+            <h2>My Projects</h2>
+          <div class="container projects-container shadow bg-body">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/recipie_page.png" class="d-block w-100" alt="recipie_page">
+                  <div class="carousel-caption d-none d-md-block bg-dark text-white rounded p-5 ">
+                    <h3 class="mb-3">Simple Omlette Recipie</h3>
+                    <p>This is a simple webpage created using HTML & CSS Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eligendi Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, animi aspernatur excepturi officiis magni vel!</p>
+                    <a href="https://wonderful-salamander-da2bba.netlify.app/">Click Me!</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Mozilla.png" class="d-block w-100" alt="Mozilla">
+                  <div class="carousel-caption d-none d-md-block bg-dark rounded p-5">
+                    <h5>Mozilla Clone</h5>
+                    <p>This is a replica of Mozilla home page by using simple html tags. The link below will take you to the page. A sample of the website UI is given below. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero totam nihil magnam dignissimos beatae molestias sed!</p>
+                    <a href="https://zingy-daffodil-ae18b0.netlify.app/">Click Me!</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Amazon.png" class="d-block w-100" alt="Amazon">
+                  <div class="carousel-caption d-none d-md-block bg-dark rounded p-5">
+                    <h5>Amazon</h5>
+                    <p>The link below will take you to the Amazoan home page. A sample of the website UI is given below.</p>
+                    <a href="">Click Me!</a>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-           </div>
+          </div>
+          </div>
         </section>
-        <section id="Contact">
-            <div class="contact_main">
-                <h2>Contact</h2>
-                <form method="get">
-                    <fieldset>
-                        <legend>Contact Form:</legend>
-                        <div class="form">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="name" minlength="3" placeholder="Enter your first name" required/>
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="name" minlength="3" placeholder="Enter your last name"  required/>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" maxlength="40" placeholder="aaa@example.com" required />
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" maxlength="50" placeholder="max 50 chars allowed" />
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" maxlength="200" placeholder="max 200 chars allowed" rows="4" cols="30"></textarea>
-                            <input type="submit" value="Submit" class="submit"/>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </section>    
+        <section id="contact">
+          <div class="container my-5">
+            <h2 class="mb-3">Contact Form</h2>
+            <form method="get" class="w-50 m-auto">
+              <div class="mb-3">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Enter your First Name." minlength="3">
+              </div>
+              <div class="mb-3">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter your Last Name." minlength="3">
+              </div>
+              <div class="mb-3">
+                <label for="Email1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" maxlength="30">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="max 50 chars allowed" maxlength="50">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea type="text" class="form-control" id="message" placeholder="max 200 chars allowed" maxlength="200"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success w-100 align-center">Submit</button>
+            </form>
+          </div>
+        </section>
     </main>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
